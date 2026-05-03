@@ -14,7 +14,6 @@
         --fg: #1a1a1a;
         --muted: #555;
         --bg: #fafafa;
-        --card: #fff;
         --border: #e0e0e0;
         --link: #0b57d0;
       }
@@ -23,7 +22,6 @@
           --fg: #e8e8e8;
           --muted: #a8a8a8;
           --bg: #121212;
-          --card: #1e1e1e;
           --border: #333;
           --link: #8ab4f8;
         }
@@ -78,22 +76,6 @@
       a:hover {
         text-decoration: underline;
       }
-      .note {
-        font-size: 0.9rem;
-        color: var(--muted);
-        padding: 0.75rem 1rem;
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        margin: 1rem 0;
-      }
-      footer {
-        margin-top: 2.5rem;
-        padding-top: 1.25rem;
-        border-top: 1px solid var(--border);
-        font-size: 0.9rem;
-        color: var(--muted);
-      }
     </style>
   </head>
   <body>
@@ -121,9 +103,13 @@
           href="https://play.google.com/store/apps/details?id=com.justtodoit.app"
           >Google Play</a
         >
-        listing) is responsible for the App’s behavior on your device. Google
-        and, if enabled in your build, Supabase operate their own services under
-        their own policies (linked below).
+        listing) is responsible for the App’s behavior on your device.
+        Google processes account and Tasks data under
+        <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
+        If the App is configured to use Supabase, Supabase processes
+        authentication data under
+        <a href="https://supabase.com/privacy">Supabase’s Privacy Policy</a>
+        (see also the Supabase section below).
       </p>
 
       <h2>Information the App accesses</h2>
@@ -151,7 +137,7 @@
 
       <h2>Optional Supabase authentication</h2>
       <p>
-        Depending on how the App is built and configured, after you sign in
+        Depending on app configuration, after you sign in
         with Google the App may exchange your Google <strong>ID token</strong>
         with <a href="https://supabase.com/">Supabase</a> Auth
         (<code>signInWithIdToken</code>) to create a session. If Supabase is not
@@ -182,7 +168,7 @@
         account system beyond what is described above.
       </p>
 
-      <h2>What we do not do (as shipped by this project)</h2>
+      <h2>What we do not do</h2>
       <ul>
         <li>
           The App is not designed to sell your personal information or to show
@@ -195,11 +181,6 @@
           session layer).
         </li>
       </ul>
-      <p class="note">
-        If you use a fork or a third-party build, its developer may change
-        behavior, endpoints, or analytics. This page describes the open-source
-        project’s intended design.
-      </p>
 
       <h2>Children</h2>
       <p>
@@ -237,25 +218,13 @@
       <h2>Contact</h2>
       <p>
         For privacy questions about <strong>Just Todo It</strong>, use the
-        contact option on the
+        contact details on the
         <a
           href="https://play.google.com/store/apps/details?id=com.justtodoit.app"
           >Google Play</a
         >
-        listing, or open an issue on the project repository:
-        <a href="https://github.com/nxnarbais/just-todo-it/issues"
-          >github.com/nxnarbais/just-todo-it/issues</a
-        >.
+        listing.
       </p>
     </main>
-
-    <footer>
-      <p>
-        Open source:
-        <a href="https://github.com/nxnarbais/just-todo-it"
-          >github.com/nxnarbais/just-todo-it</a
-        >
-      </p>
-    </footer>
   </body>
 </html>
