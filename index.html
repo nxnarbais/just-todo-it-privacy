@@ -215,6 +215,52 @@
         </li>
       </ul>
 
+      <h2 id="data-deletion">Deleting your data (Just Todo It)</h2>
+      <p>
+        <strong>Just Todo It</strong> does not create a separate “Just Todo It”
+        login. You sign in with <strong>Google</strong>; your tasks live in
+        <strong>Google Tasks</strong> under your Google account.
+      </p>
+      <p><strong>To stop this app from accessing your Google account</strong></p>
+      <ol>
+        <li>
+          Open
+          <a href="https://myaccount.google.com/permissions">Google Account → Third-party access</a>
+          and remove <strong>Just Todo It</strong> (or the app name shown for this OAuth client).
+        </li>
+        <li>
+          In the App, use <strong>Sign out</strong> if available, then
+          <strong>Clear storage</strong> / <strong>Clear data</strong> for the
+          app in Android settings, or <strong>uninstall</strong> the App. That
+          removes local caches and queued changes on the device.
+        </li>
+      </ol>
+      <p><strong>What is deleted vs kept</strong></p>
+      <ul>
+        <li>
+          <strong>Removed from the device</strong> when you clear app data or
+          uninstall: locally cached tasks, settings, and pending sync queues
+          stored only on the device.
+        </li>
+        <li>
+          <strong>Not deleted by this App</strong>: your task lists and tasks in
+          <strong>Google Tasks</strong>. Delete or edit those in Google Tasks
+          (e.g. tasks.google.com or another Google Tasks client) if you want
+          them gone from Google.
+        </li>
+        <li>
+          If your build uses <strong>Supabase</strong> Auth, authentication
+          metadata is processed by Supabase per their policies; sign out and
+          revoke Google access as above, and contact the developer via Play if
+          you need help with Supabase-side deletion.
+        </li>
+      </ul>
+      <p>
+        There is no extra retention period for local device data beyond what
+        Android keeps after uninstall (if any). Google and Supabase retention
+        follow their own policies.
+      </p>
+
       <h2>Contact</h2>
       <p>
         For privacy questions about <strong>Just Todo It</strong>, use the
